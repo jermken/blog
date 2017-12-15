@@ -1,0 +1,24 @@
+.footer{
+    position:fixed;
+    bottom:0;
+    width:100%;
+    border-top: 0.01rem solid #999;
+}
+.footer-ul{
+    display: flex;
+    height:0.98rem;
+}
+.footer-li{
+    flex:1;
+    font-size:0.2rem;
+    line-height: 0.28rem;
+    list-style: none;
+}
+.footer-li-link {
+    text-decoration: none;
+}
+.nav-image {
+    width:0.54rem;
+    height:0.54rem;
+}
+
