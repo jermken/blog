@@ -1,0 +1,33 @@
+.d-p-f {
+    display: flex;
+}
+
+.all-content .am-tabs-tab-bar-wrap {
+    position: fixed;
+    top: 44px;
+    z-index: 5;
+    width: 100%;
+}
+
+.all-search {
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    width: 100%;
+}
+
+.all-content .am-tabs-content-wrap {
+    margin-top: 87.5px;
+}
+
+.all-content .am-tabs-default-bar-top {
+    background-color: #1296db !important;
+}
+
+.all-content .am-tabs-default-bar-tab {
+    color: #fff !important;
+}
+
+.all-content .am-tabs-default-bar-underline {
+    border: 1px #fff solid !important;
+}

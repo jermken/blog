@@ -4,6 +4,7 @@
   "private": true,
   "description": "this is a personal blog",
   "dependencies": {
+    "antd-mobile": "^2.1.2",
     "express": "^4.16.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",

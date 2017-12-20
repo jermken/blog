@@ -2,7 +2,41 @@
     position:fixed;
     bottom:0;
     width:100%;
-    border-top: 0.01rem solid #999;
+    border-top: 0.01rem solid #ccc;
+    z-index:1;
+    background-color: #fff;
+}
+.footer-hidden {
+    animation: footerdown 0.3s;
+    bottom: -0.98rem;
+}
+.footer-show {
+    animation: footerup 0.3s;
+    bottom:0;
+}
+@keyframes footerdown {
+    from { bottom: 0 }
+    to   { bottom: -0.98rem}
+}
+@-ms-keyframes footerdown {
+    from { bottom: 0 }
+    to   { bottom: -0.98rem}
+}
+@-webkit-keyframes footerdown {
+    from { bottom: 0 }
+    to   { bottom: -0.98rem}
+}
+@keyframes footerup {
+    from { bottom: -0.98rem }
+    to   { bottom: 0}
+}
+@-ms-keyframes footerup {
+    from { bottom: -0.98rem }
+    to   { bottom: 0 }
+}
+@-webkit-keyframes footerup {
+    from { bottom: -0.98rem }
+    to   { bottom: 0}
 }
 .footer-ul{
     display: flex;
@@ -20,5 +54,8 @@
 .nav-image {
     width:0.54rem;
     height:0.54rem;
+}
+.f_c1296db {
+    color:#1296db;
 }
 

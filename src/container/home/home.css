@@ -1,0 +1,32 @@
+
+.title-list-nav {
+    flex:1;
+    height: 1.2rem;
+    background: #fff;
+    padding: 0.1rem;
+    text-align: center;
+}
+.nav-list-img {
+    width: 0.8rem;
+    height: 0.8rem;
+}
+.nav-title {
+    font-size: 0.2rem;
+    line-height: 0.4rem;
+}
+
+.home-search-wrap {
+    position: fixed;
+    top:0;
+    z-index: 5;
+    width: 100%;
+}
+
+.home-carousel-wrap {
+    margin-top: 44px;
+}
+
+.home-list-title .am-list-body::after {
+    height:0 !important;
+}
+

@@ -1,0 +1,23 @@
+.my-top {
+    height: 2.8rem;
+    background-color: #1296db;
+    box-sizing: border-box;
+    padding: 0.6rem;
+    display: flex;
+    align-items: center;
+}
+
+.my-top-picture {
+    border-radius: 50%;
+    display: inline-block;
+    height: 1.6rem;
+    height: 1.6rem;
+}
+
+.my-top-info {
+    margin-left: 0.4rem;
+    color: #fff;
+    font-weight: bold;
+    font-size: 0.4rem;
+    line-height: 0.6rem;
+}

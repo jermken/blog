@@ -1,0 +1,16 @@
+
+.am-list-item img {
+    width: 0.3rem !important;
+    height: 0.3rem !important;
+    vertical-align: middle !important;
+}
+.mglt-span-info {
+    margin-left: 0.08rem;
+}
+.info-span {
+    padding: 0.08rem;
+}
+
+.am-list-content {
+    white-space: normal !important;
+}
