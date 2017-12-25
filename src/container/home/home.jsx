@@ -10,6 +10,8 @@ import collectionIcon from './../../asset/image/collection_icon.svg';
 import bookIcon from './../../asset/image/book_icon.svg';
 import videoIcon from './../../asset/image/video_icon.svg';
 import { ArticalItem } from './../../component';
+import server from './../../server/server.js';
+
 const Item = List.Item;
 
 export default class Home extends Component {
@@ -21,8 +23,11 @@ export default class Home extends Component {
         }
     }
     componentWillMount() {
-        this.setState({
-            data: ['AiyWuByWklrrUDlFignR', 'TekJlZRVCjLFexlOCuWn', 'IJOtIlfsYdTyaDTRVrLI']
+        server.reqGET('home/datalist',{
+            begin_date:'',
+            end_date:''
+        },(res)=>{
+            console.log(res);
         });
     }
 
@@ -36,13 +41,21 @@ export default class Home extends Component {
     changeTab(e) {
         //console.log(e);
     }
+    
+    searchHander(e) {
+        server.reqPOST('home/search',{
+            content: e
+        },(res)=>{
+            console.log(res);
+        });
+    }
 
     render() {
         let { dataItems } = this.state;
         return <div>
             <div className="home-content">
                 <div className="home-search-wrap">
-                    <SearchBar placeholder="搜索文章" />
+                    <SearchBar placeholder="搜索文章" onSubmit={this.searchHander}/>
                 </div>
                 <div className="home-carousel-wrap">
                     <CarouselWrap/>
