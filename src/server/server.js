@@ -1,6 +1,6 @@
 import 'whatwg-fetch';
 
-const publicPath = 'http://127.0.0.1:3030/api/'; // https://nile.dev.xone.xin/api/
+const publicPath = 'http://manage.jermken.com/api/';
 
 
 /* 判断响应的状态 */
@@ -65,7 +65,8 @@ const xmlHttpReq = {
         time = time.getTime();
         let URL = publicPath + url + '?_time_=' + time + '&' + objectToStr(data);
         fetch(URL,{
-            credentials: 'include'
+            credentials: 'http://manage.jermken.com',
+            mode: 'cors'
         })
         .then(checkStatus)
         .then(parseJSON)

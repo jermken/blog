@@ -21,16 +21,21 @@ class ArticalItem extends Component {
         this.setState({content: nextProps.content})
     }
 
+    timeFormat(time) {
+
+    }
+
     render() {
+        let self = this;
         return <div>
             <List>
-                { this.state.content.map( (i) => <Item key={i} multipleLine extra="#前端">
-                    前端入行两年--教会了我这些道理
-                    <Brief><span className="list-item-author">qiucheng</span><span>4小时前</span></Brief>
-                    <Brief>
+                { this.state.content.map( (i) => <Item key={i.title} multipleLine extra={`#${i.label}`}>
+                    { i.title }
+                    <Brief><span className="list-item-author">{i.author}</span><span>{self.timeFormat(i.time)}</span></Brief>
+                    {/* <Brief>
                         <span><img alt="点赞" src={praiseIconS}/><span className="info-span">111</span></span>
                         <span className="mglt-span-info"><img alt="评论" src={commentIconS}/><span className="info-span">222</span></span>
-                    </Brief>
+                    </Brief> */}
                 </Item>)}
             </List>
         </div>
